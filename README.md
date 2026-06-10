@@ -30,7 +30,7 @@ This project focuses on predicting sentiment in text from financial news using n
 - Account for overlapping terms when modeling. This would also require steps to excluded terms like operating profit or net profit from the process, since those are specific financial terms we would want to keep rather than actual overlapping terms we would want to remove.
 
 # Approach
-- Used vectorization and logistic regression for sentiment classification.
+- Used vectorization and logistic regression to build sentiment classification models.
 - Preprocessed text with tokenization, stopword removal, and lemmatization.
 - Explored patterns with word clouds, sentiment distribution, and word count box plots.
 - Built 4 models based on the word count of the phrases used for training.

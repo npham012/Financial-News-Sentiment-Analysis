@@ -3,7 +3,7 @@
 - [Executive Summary](#executive-summary)
 - [Data](#data)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Sentiment Prediction Modeling](#sentiment-prediction-modeling)
+- [Sentiment Classification Modeling](#sentiment-prediction-modeling)
 - [Data Source and License](#data-source-and-license)
 ---
 
@@ -22,7 +22,7 @@ This project focuses on predicting sentiment in text from financial news using n
 - **SHAP**: computing Shapley values and visualizing word/phrase importance
 
 ## Approach
-- Used TF-IDF vectorization and logistic regression for sentiment classification.
+- Used TF-IDF vectorization and logistic regression to build sentiment classification models.
 - Preprocessed text with tokenization, stopword removal, and lemmatization.
 - Explored patterns with word clouds, sentiment distribution, and word count box plots.
 - Built 4 models based on the word count of the phrases used for training.
@@ -113,7 +113,7 @@ Multiple Word Clouds were generated based on N-Gram, representing word count wit
 - Captures much richer context such as 'today net profit fell' and longer phrases like 'recent market analysis'.
 
 ---
-# Sentiment Prediction Modeling
+# Sentiment Classification Modeling
 Multiple models were built using Term Frequency Inverse Document Frequency (TF-IDF) vectorization combined with a logistic regression classifier. This is a hybrid vectorization method using Term Frequency (TF) and Inverse Document Frequency (IDF). TF measures the number of occurances of a term, while IDF penalizes terms that appear across many documents. TF-IDF combines both methods, emphasizing terms that are frequent but uniquely distributed across different observations.
 
 The TF-IDF vectorizer converts text to numerical features and inputs those into a logistic regression classification algorithm, which finds the probabilities for each sentiment class and chooses the sentiment with the highest probability as its prediction.
